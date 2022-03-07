@@ -1,0 +1,121 @@
+/* Recolor site backgound*/
+body {
+	background-color: lightskyblue;
+	font-size: 18px;
+	font-family: "Arial", Verdana, sans-serif;
+	color: black;
+}
+
+/*Recolors and centers header*/
+h1 {
+	color: navy;
+	text-align: center;
+}
+
+/*Recolors and centers header*/
+h2 {
+	color: navy;
+	text-align: center;
+}
+
+/*Recolors and centers header*/
+h3 {
+	color: navy;
+	text-align: center;
+}
+
+/* Removes default HTML list formatting, adds nav bar background and sticky feature*/
+ul.navBar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: sticky;
+	top: 1; /*Sticky Bar currently disabled, to reenable, change '1' to a '0'*/
+	font-family: serif;
+}
+
+/*Organizes list into horizontal bar*/
+li.navBarItem{
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+/*Formats the nav bar*/
+li.navBarItem a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/*Changes nav bar button color when mouse hovers*/
+li.navBarItem a:hover:not(active) {
+	background-color: black;
+}
+
+/* Highlights active page*/
+.active {
+	background-color: navy;
+}
+
+/*Formats webpage header */
+header{
+	border: 2px, solid #333;
+	padding: 4px;
+	background-color: #66ff;
+	color: white;
+	text-align: left;
+	font-family: serif;
+}
+
+/*Formats webpage footer */
+footer{
+	border: 2px, solid red;
+	border-radius: 10px;
+	padding: 4px;
+	background-color: #333;
+	color: white;
+	text-align: left;
+	font-family: serif;
+}
+
+/*Formats table on About Me page*/
+table{
+	border-collapse: collapse;
+	border: 5px solid navy;
+	width: 100%;
+}
+
+th{
+	background-color: navy;
+	color:white;
+	text-align: left;
+}
+
+tr:nth-child(even) {background-color: white;}
+tr:hover {background-color: #888}
+
+/*Splits webpage into 3 columns*/
+div.side {
+	float:left;
+	width: 25%;
+}
+div.middle {
+	float:left;
+	width: 50%;
+}
+div.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*MadLib Text*/
+.storyText {
+	color: navy;
+	text-align: center;
+	font-size: 20px;
+}

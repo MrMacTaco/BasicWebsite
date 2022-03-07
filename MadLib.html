@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Let's Play MadLib!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="Scripts.js"></script>
+        <link rel="stylesheet" href = "MyStyle.css">
+        <meta charset="UTF-8" /><meta name="description" content="My hometown page" />
+        <meta name="keywords" content="fun, wacky, interesting" />
+        <meta name="author" content="Austin MacDougall" />
+        <meta name="robots" content="index,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <header>
+    	<h1> The Real&trade; Austin M.'s crazy, zanny website! </h1>
+    </header>
+    <body>
+    	<ul class = "navBar">
+    		<li class = "navBarItem"> <a href = "index.html"> Home</a> </li>
+        	<li class = "navBarItem"> <a href = "AboutMe.html"> About Me</a> </li>
+            <li class = "navBarItem"> <a href = "HomeTown.html"> My Hometown</a> </li>
+        	<li class = "navBarItem"> <a class = "active" href = "MadLib.html"> MadLib</a> </li>
+        </ul>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Let's play a MadLib! Start by filling out the following forms!</p>
+
+                    <p>Please enter your name:</p>
+                    <input type="text" id="name"/>
+
+                    <p>Please enter your favorite color:</p>
+                    <input type="text" id="color"/>
+
+                    <p>Please enter your favorite number:</p>
+                    <input type="text" id="number"/>
+
+                    <p>Please enter your height in centimeters:</p>
+                    <input type="text" id="height"/>
+
+                    <p>Please enter the name of a friend:</p>
+                    <input type="text" id="friend"/>
+
+                    <p>Please enter an adjective:</p>
+                    <input type="text" id="adj1"/>
+
+                    <p>Please enter an adjective:</p>
+                    <input type="text" id="adj2"/>
+
+                    <p>Please enter an verb ending in '-ing':</p>
+                    <input type="text" id="verb"/>
+
+                    <p>Please select a starship model:</p>
+                    <select id="ship">
+                        <option value="" selected>...</option>
+                        <option value="X-Wing">X-Wing</option>
+                        <option value="Tie Fighter">Tie Fighter</option>
+                        <option value="Razorcrest Gunship">Razorcrest Gunship</option>
+                        <option value="Lambda Shuttle">Lambda Shuttle</option>
+                    </select>
+
+                    <p>Please select a planet:</p>
+                    <select id="planet">
+                        <option value="" selected>...</option>
+                        <option value="Tatooine">Tatooine</option>
+                        <option value="Yavin 4">Yavin 4</option>
+                        <option value="Kashyyyk">Kashyyyk</option>
+                        <option value="Navaro">Navaro</option>
+                    </select>
+
+                    <p>Please select a character:</p>
+                        <input type="radio" id="luke" name="favChar" value="Luke Skywalker">
+                        <label for="luke">Luke Skywalker</label>
+                        <br>
+                        <input type="radio" id="leia" name="favChar" value="Leia Organa">
+                        <label for="leia">Leia Organa</label>
+                        <br>
+                        <input type="radio" id="han" name="favChar" value="Han Solo">
+                        <label for="han">Han Solo</label>
+                        <br>
+
+
+                    <input type="button" onclick="generateMadLib()" value="Create MadLib"/>
+
+                </div>
+                <div class="col-md-6">
+                    <div class= "storyText" id = "storyText">
+                        <p>Once the forms are filled, click "Create MadLib" button to begin!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+    	<p>Thanks for visiting my website! If you're reading this footer, you made it to the bottom of the page!</p>
+    </footer>
+</html>
